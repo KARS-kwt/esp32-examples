@@ -1,3 +1,6 @@
 [submodule "lib/ps5-esp32"]
 	path = lib/ps5-esp32
 	url = https://github.com/rodneybakiskan/ps5-esp32.git
+[submodule "lib/ps4-esp32"]
+	path = lib/ps4-esp32
+	url = https://github.com/aed3/PS4-esp32.git
