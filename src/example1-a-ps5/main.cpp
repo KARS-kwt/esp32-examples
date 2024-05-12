@@ -8,10 +8,10 @@ void setup() {
 }
 
 void loop() {
-//  while (ps5.isConnected() == false) { // commented out as ps5 controller seems to connect quicker when microcontroller is doing nothing
-//    Serial.println("PS5 controller not found");
-//    delay(300);
-//  }
+ while (ps5.isConnected() == false) { // commented out as ps5 controller seems to connect quicker when microcontroller is doing nothing
+   Serial.println("PS5 controller not found");
+   delay(300);
+ }
 
   while (ps5.isConnected() == true) {
     // if (ps5.Right()) Serial.println("Right Button");
