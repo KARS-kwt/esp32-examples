@@ -12,18 +12,15 @@ class MainWindow(QMainWindow):
         self.widget = QWidget()
         self.layout = QVBoxLayout()
         
-        
         self.graphWidget1 = pg.PlotWidget()
         self.graphWidget2 = pg.PlotWidget()
         self.button = QPushButton("Start")
         self.button.clicked.connect(self.toggle_plot)
         
-        
         # self.setCentralWidget(self.graphWidget)
         self.layout.addWidget(self.graphWidget1)
         self.layout.addWidget(self.graphWidget2)
         self.layout.addWidget(self.button)
-        
         
         self.widget.setLayout(self.layout)
         self.setCentralWidget(self.widget)
@@ -52,12 +49,11 @@ class MainWindow(QMainWindow):
             self.button.setText('Stop')
             
     def update_plot_data(self):
-
         self.x = self.x[1:]  
         self.x.append(self.x[-1] + 1) 
 
         self.y = self.y[1:]  
-        self.y.append( randint(0,100)) 
+        self.y.append(randint(0,100)) 
 
         self.data_line1.setData(self.x, self.y)  
         self.data_line2.setData(self.x, self.y)  
