@@ -1,3 +1,7 @@
+# ESP32 Examples
+
+This repo serves as a collection of useful examples for different components required by the robots.
+
 ## PlatformIO
 
 
