@@ -9,6 +9,7 @@ This repo is a PlatformIO project with multiple examples. You can find PlatformI
 | 2       | Motor Control (PWM - ESC) | TBC |
 | 3       | Motor Control (PWM - RC Servo) | TBC |
 | 4       | Motion Estimation (I2C/SPI - IMU) | TBC |
+| 5       | Serial Communication - JSON | TBC |
 
 ### What you need
 - VSCode
@@ -59,6 +60,10 @@ TBC
 ## Example 3 - PWM Servo Control (RC Servos)
 TBC
 
-## Example 3 - IMU
+## Example 4 - IMU
+
+TBC
+
+## Example 5 - Serial
 
 TBC
