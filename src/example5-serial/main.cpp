@@ -1,17 +1,17 @@
 #include <Arduino.h>
 #include <ArduinoJson.h>
 
-#define JSON_CAPACITY 200
 #define period 1000
 
-
-void setup() {
+void setup()
+{
     Serial.begin(921600);
 }
 
-void loop() {
+void loop()
+{
 
-    StaticJsonDocument<JSON_CAPACITY> doc;
+    JsonDocument doc;
 
     auto now = millis();
 
@@ -25,6 +25,4 @@ void loop() {
     serializeJson(doc, Serial);
     Serial.println();
     delay(100);
-
 }
-
